@@ -49,3 +49,4 @@ Este proyecto es una aplicación web para administrar parques urbanos del Área 
 - Cuando das clic en una tarjeta, se abre un modal con la info del parque y puedes editarlo desde ahí.
 - El botón de eliminar abre otro modal para confirmar antes de borrar (por si te arrepientes).
 - El formulario tiene un input para subir imagen, pero la API solo acepta URL, así que hay que subir la imagen a algún lado y pegar la URL (por ahora).
+- Hay un buscador arriba de las tarjetas para filtrar parques por nombre, ciudad o estado.
