@@ -13,6 +13,7 @@ export default function App() {
   const [editModalPark, setEditModalPark] = useState(null);
   const [deleteModalPark, setDeleteModalPark] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     loadParks();
@@ -55,6 +56,13 @@ export default function App() {
     setModalPark(park);
   }
 
+  const filteredParks = parks.filter(
+    (park) =>
+      park.park_name.toLowerCase().includes(search.toLowerCase()) ||
+      park.park_city.toLowerCase().includes(search.toLowerCase()) ||
+      park.park_state.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="min-h-screen min-w-screen bg-green-50 flex flex-col">
       {/* Header */}
@@ -79,6 +87,17 @@ export default function App() {
         <h2 className="text-3xl font-bold text-green-900 mb-8 text-center">
           Lista de Parques 🌳
         </h2>
+
+        {/* Buscador */}
+        <div className="max-w-2xl mx-auto mb-8">
+          <input
+            type="text"
+            placeholder="Buscar parque por nombre, ciudad o estado..."
+            className="w-full p-4 rounded-xl border focus:outline-none focus:ring-2 focus:ring-green-400 transition"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
 
         {/* Formulario de crear parque arriba de las tarjetas */}
         {showAdmin && (
@@ -111,7 +130,7 @@ export default function App() {
         )}
 
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {parks.length === 0 ? (
+          {filteredParks.length === 0 ? (
             Array.from({ length: 6 }).map((_, i) => (
               <div
                 key={i}
@@ -126,7 +145,7 @@ export default function App() {
               </div>
             ))
           ) : (
-            parks.map((park) => (
+            filteredParks.map((park) => (
               <div
                 key={park.id}
                 className="bg-white border rounded-2xl shadow-md hover:shadow-xl transition-shadow overflow-hidden flex flex-col h-full"
