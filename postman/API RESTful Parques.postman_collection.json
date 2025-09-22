@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "67690639-e33a-4027-a367-b5986babbf8e",
+		"name": "API RESTful Parques",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44667710"
+	},
+	"item": [
+		{
+			"name": "https://azuritaa33.sg-host.com/api/web/v1/parks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Ambu-Public-Key",
+						"value": "AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T"
+					}
+				],
+				"url": {
+					"raw": "https://azuritaa33.sg-host.com/api/web/v1/parks",
+					"protocol": "https",
+					"host": [
+						"azuritaa33",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET \"https://azuritaa33.sg-host.com/api/web/v1/parks\" \\\r\n  -H \"Accept: application/json\" \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -H \"Ambu-Public-Key: AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW\" \\\r\n  -H \"Ambu-Private-Key: AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T\"\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://azuritaa33.sg-host.com/api/web/v1/parks Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Ambu-Public-Key",
+						"value": "AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T"
+					}
+				],
+				"url": {
+					"raw": "https://azuritaa33.sg-host.com/api/web/v1/parks/43",
+					"protocol": "https",
+					"host": [
+						"azuritaa33",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks",
+						"43"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET \"https://azuritaa33.sg-host.com/api/web/v1/parks\" \\\r\n  -H \"Accept: application/json\" \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -H \"Ambu-Public-Key: AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW\" \\\r\n  -H \"Ambu-Private-Key: AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T\"\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://azuritaa33.sg-host.com/api/web/v1/parks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Ambu-Public-Key",
+						"value": "AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"park_name\": \"Parque Nuevo Prueba\",\r\n    \"park_abbreviation\": \"PNP\",\r\n    \"park_img_url\": \"https://picsum.photos/600/400.jpg\",\r\n    \"park_address\": \"Calle Falsa 123\",\r\n    \"park_city\": \"Zapopan\",\r\n    \"park_state\": \"Jalisco\",\r\n    \"park_zip_code\": 45000,\r\n    \"park_latitude\": 20.80,\r\n    \"park_longitude\": -103.64\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://azuritaa33.sg-host.com/api/web/v1/parks",
+					"protocol": "https",
+					"host": [
+						"azuritaa33",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST \"https://azuritaa33.sg-host.com/api/web/v1/parks\" \\\r\n  -H \"Accept: application/json\" \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -H \"Ambu-Public-Key: AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW\" \\\r\n  -H \"Ambu-Private-Key: AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T\" \\\r\n  -d '{\r\n    \"park_name\": \"Parque Nuevo desde CURL\",\r\n    \"park_abbreviation\": \"PNC\",\r\n    \"park_img_url\": \"https://mapio.net/images-p/24809188.jpg\",\r\n    \"park_address\": \"Calle Falsa 123\",\r\n    \"park_city\": \"Zapopan\",\r\n    \"park_state\": \"Jalisco\",\r\n    \"park_zip_code\": 45000,\r\n    \"park_latitude\": 20.67,\r\n    \"park_longitude\": -103.44\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://azuritaa33.sg-host.com/api/web/v1/parks/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Ambu-Public-Key",
+						"value": "AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"park_name\": \"Parque Nuevo Prueba - ACTUALIZADO\",\r\n    \"park_abbreviation\": \"PMGE\",\r\n    \"park_city\": \"Zapopan\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://azuritaa33.sg-host.com/api/web/v1/parks/43",
+					"protocol": "https",
+					"host": [
+						"azuritaa33",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks",
+						"43"
+					]
+				},
+				"description": "Generated from cURL: curl -X PUT \"https://azuritaa33.sg-host.com/api/web/v1/parks/1\" \\\r\n  -H \"Accept: application/json\" \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -H \"Ambu-Public-Key: AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW\" \\\r\n  -H \"Ambu-Private-Key: AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T\" \\\r\n  -d '{\r\n    \"park_name\": \"Parque Metropolitano - EDITADO desde CURL\",\r\n    \"park_abbreviation\": \"PMG\",\r\n    \"park_city\": \"Zapopan\"\r\n  }'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "https://azuritaa33.sg-host.com/api/web/v1/parks/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Ambu-Public-Key",
+						"value": "AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW"
+					},
+					{
+						"key": "Ambu-Private-Key",
+						"value": "AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T"
+					}
+				],
+				"url": {
+					"raw": "https://azuritaa33.sg-host.com/api/web/v1/parks/43",
+					"protocol": "https",
+					"host": [
+						"azuritaa33",
+						"sg-host",
+						"com"
+					],
+					"path": [
+						"api",
+						"web",
+						"v1",
+						"parks",
+						"43"
+					]
+				},
+				"description": "Generated from cURL: curl -X DELETE \"https://azuritaa33.sg-host.com/api/web/v1/parks/1\" \\\r\n  -H \"Accept: application/json\" \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -H \"Ambu-Public-Key: AMBU-T-BXiqUTFtRg8PbWLc-57055915-n59AHW\" \\\r\n  -H \"Ambu-Private-Key: AMBU-fVN0VyresedITDPm7pvGrjnb2urUxlR0EKsS1qc86T4VEWP6-VFZ4N83UcrKS357V-T\"\r\n"
+			},
+			"response": []
+		}
+	]
+}
