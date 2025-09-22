@@ -56,7 +56,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-green-50 flex flex-col">
+    <div className="min-h-screen min-w-screen bg-green-50 flex flex-col">
       {/* Header */}
       <header className="bg-green-200 text-white shadow-md">
         <div className="max-w-7xl mx-auto p-4 flex items-center justify-between">
